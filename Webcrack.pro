@@ -4,8 +4,9 @@
 
 TEMPLATE = app
 TARGET = Webcrack
-INCLUDEPATH += .
+INCLUDEPATH += ./ include/
 QT += widgets gui network
 
 # Input
-SOURCES += src/webcrack.cpp
+HEADERS += include/mainwindow.h
+SOURCES += src/webcrack.cpp src/mainwindow.cpp
